@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="dom.js" type="module" defer></script>
+		<script src="script.js" type="module" defer></script>
+		<script src="morseCodeKey.js" type="module" defer></script>
+		<link rel="stylesheet" href="styles.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;600;700&family=Kanit:wght@500&display=swap"
+			rel="stylesheet"
+		/>
+
+		<title>Morse Code Translator</title>
+	</head>
+	<body>
+		<h4>
+			.- -- .- -. .. .-. . --.. .- ... -- --- .-. ... . -.-. --- -.. . -
+			.-. .- -. ... .-.. .- - --- .-.
+		</h4>
+		<h1>Morse Code Translator</h1>
+		<form id="pageForm">
+			<input
+				type="text"
+				placeholder="Type text here.."
+				name="query"
+				id="query"
+			/>
+			<p id="caption">
+				To convert from Morse Code to English, ensure spaces between
+				words are double spaced.
+			</p>
+
+			<button type="submit" id="button" onclick="">Translate</button>
+		</form>
+		<div class="displayBoxes">
+			<div class="displayBoxes__1">
+				<h3>Translate:</h3>
+				<div class="displayBoxes__1--english" id="english"></div>
+			</div>
+			<div class="displayBoxes__2">
+				<h3>Translation:</h3>
+				<div class="displayBoxes__2--morse" id="morse"></div>
+			</div>
+		</div>
+		<div id="mcKey">
+			<h2>Morse Code Key</h2>
+			<ul>
+				<li>A .-</li>
+				<li>B -...</li>
+				<li>C -.-.</li>
+				<li>D: -..</li>
+				<li>E: .</li>
+				<li>F: ..-.</li>
+				<li>G: --.</li>
+				<li>H: ....</li>
+				<li>I: ..</li>
+				<li>J: .---</li>
+				<li>K: -.-</li>
+				<li>L: .-..</li>
+				<li>M: --</li>
+				<li>N: -.</li>
+				<li>O: ---</li>
+				<li>P: .--.</li>
+				<li>Q: --.-</li>
+				<li>R: .-.</li>
+				<li>S: ...</li>
+				<li>T: -</li>
+				<li>U: ..-</li>
+				<li>V: ...-</li>
+				<li>W: .--</li>
+				<li>X: -..-</li>
+				<li>Y: -.--</li>
+				<li>Z: --..</li>
+				<li>0: -----</li>
+				<li>1: .----</li>
+				<li>2: ..---</li>
+				<li>3: ...--</li>
+				<li>4: ....-</li>
+				<li>5: .....</li>
+				<li>6: -....</li>
+				<li>7: --...</li>
+				<li>8: ---..</li>
+				<li>9: ----.</li>
+				<li>?: ..--..</li>
+				<li>!: -.-.--</li>
+				<li>.: .-.-.-</li>
+				<li>,: --..--</li>
+				<li>;: -.-.-.</li>
+				<li>:: ---...</li>
+				<li>+: .-.-.</li>
+				<li>-: -....-</li>
+				<li>/: -..-.</li>
+				<li>=: -...-</li>
+			</ul>
+		</div>
+	</body>
+</html>

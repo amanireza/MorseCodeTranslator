@@ -1,0 +1,180 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+}
+
+h1 {
+  font-family: "Dosis", sans-serif;
+  background-color: black;
+  text-align: center;
+  margin: 0px;
+  padding-top: 5vh;
+  color: white;
+  height: 10vh;
+  width: 100vw;
+  font-size: 10vh;
+  font-weight: 700;
+}
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 5vh;
+    font-weight: 700;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 600px) {
+  h1 {
+    font-size: 5vh;
+    font-weight: 700;
+  }
+}
+
+h2 {
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+  font-size: 4vh;
+}
+
+h3 {
+  font-family: "Dosis", sans-serif;
+  color: rgba(0, 0, 0, 0.212);
+  font-size: 2vh;
+  font-weight: 300;
+}
+@media only screen and (max-width: 320px) {
+  h3 {
+    font-size: 3vh;
+    font-weight: 300;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 600px) {
+  h3 {
+    font-size: 4vh;
+    font-weight: 300;
+  }
+}
+
+h4 {
+  font-family: "Dosis", sans-serif;
+  font-size: 3vh;
+  margin: 0;
+  color: white;
+  background-color: black;
+  width: 100vw;
+  text-align: center;
+}
+
+p {
+  font-family: "Dosis", sans-serif;
+  font-size: 5vh;
+}
+
+.displayBoxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50vw;
+}
+@media only screen and (max-width: 320px) {
+  .displayBoxes {
+    width: 100vw;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 600px) {
+  .displayBoxes {
+    width: 100vw;
+  }
+}
+.displayBoxes__1 {
+  border-right: 1px solid rgba(209, 209, 209, 0.2);
+  background-color: rgba(209, 209, 209, 0.2);
+  width: 50vw;
+  padding: 2%;
+}
+.displayBoxes__2 {
+  border-left: 1px solid rgba(209, 209, 209, 0.2);
+  background-color: rgba(209, 209, 209, 0.2);
+  width: 50vw;
+  padding: 2%;
+}
+
+#pageForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#query {
+  height: 100px;
+  width: 50vw;
+  margin: 1vh;
+  border: 1px solid white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  font-size: 3vh;
+  border: 1px solid rgba(209, 209, 209, 0.2);
+  border-radius: 15px;
+  color: rgba(0, 0, 0, 0.5);
+}
+#query ::placeholder {
+  color: black;
+}
+@media only screen and (max-width: 320px) {
+  #query {
+    height: 10vh;
+    width: 100vw;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 600px) {
+  #query {
+    height: 10vh;
+    width: 100vw;
+  }
+}
+
+#button {
+  font-family: "Dosis", sans-serif;
+  font-size: 3vh;
+  width: 50vw;
+  margin: 1vh;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  border-radius: 15px;
+}
+
+#mcKey {
+  border: 1px solid rgba(209, 209, 209, 0.2);
+  border-radius: 15px;
+  margin: 2vh;
+  padding: 5vh;
+}
+
+li {
+  list-style: none;
+  font-family: "Dosis", sans-serif;
+  font-size: 4vh;
+}
+
+ul {
+  -moz-column-count: 4;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 4;
+  -webkit-column-gap: 20px;
+  column-count: 4;
+  column-gap: 20px;
+  padding-left: 0;
+}
+
+#caption {
+  font-family: "Dosis", sans-serif;
+  font-size: 1.5vh;
+  color: rgba(0, 0, 0, 0.5);
+}
